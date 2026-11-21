@@ -1,0 +1,37 @@
+{
+    "seed": "https://books.toscrape.com/",
+    "crawled_at": "2026-11-21T15:40:13.320127+00:00",
+    "scope": {
+        "domain": "books.toscrape.com",
+        "allowed_kinds": [
+            "listing",
+            "book"
+        ],
+        "allowed_listing_paths": [
+            "/",
+            "/catalogue/page-2.html"
+        ],
+        "book_path_pattern": "/catalogue/[^/]+/index\\.html"
+    },
+    "limits": {
+        "max_requests": 8,
+        "max_depth": 2,
+        "max_listings": 2,
+        "max_books": 6
+    },
+    "effective_delay": 0.5,
+    "robots_status": "See live_fetch robots configuration",
+    "stats": {
+        "duplicates_avoided": 23,
+        "quota_skipped": 34,
+        "attempts": 8,
+        "saved_pages": 8,
+        "books": 6,
+        "queued": 8,
+        "frontier_remaining": 0
+    },
+    "fetch_stats": {
+        "network_requests": 8,
+        "http_200": 8
+    }
+}
